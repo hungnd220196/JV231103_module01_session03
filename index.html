@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form hay gọi là biểu mẫu, giúp gửi dữ liệu đến server
+     label: khi có giá trị thuộc tính for trùng với id click vào thì focus đến ô nhập
+    ô input là fill để nhập dữ liệu
+Các giá trị cuẩ thuộc tính type:
+1.type="text" nhập dữ liệu dang text
+2.type="password" giá trị bị che đi
+3. radio: khi có cùng giá trị name thì chỉ chọn 1 fill
+nếu muốn k chọn gì lấy giá trị ô đó luôn thì cho nó thêm tt checked
+4.checkbox chọn nhiều giá trị
+5 type=file: có thể chọn tệp gửi dữ liệu lên
+6type="date", 7type="month", 8type="email", 9type="number"
+10. placeholder gợi ý cho người dùng nhập
+require: bắt buộc điền
+autocomplete không muốn gợi ý nhập
+value giá trị ô input
+`11-->
+    <form action="" method="post">
+      <label for="user name">user Name</label>
+      <input
+        type="text"
+        name="user name"
+        placeholder="mời bạn nhập tên"
+        autocomplete="off"
+        id="user name"
+      />
+      <br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        value="123"
+      />
+      <br />
+
+      <input type="radio" name="12" id="" />A <br />
+      <input type="radio" name="12" id="" />b <br />
+      <input type="radio" name="12" id="" />c <br />
+      <input type="file" multiple /> <br />
+      <input type="date" /> <br />
+      <input type="number" name="" id="" /> <br />
+      <input type="range" /> <br />
+      <input type="color" /> <br />
+      <textarea name="" id="" cols="30" rows="10"></textarea> <br />
+      <input type="submit" /> <br />s
+
+      <select name="" id="">
+        <option value="" selected>hn</option>
+        <option value="">hcm</option>
+        <option value="">nd</option>
+      </select>
+      <button disabled>login</button>
+    </form>
+  </body>
+</html>
